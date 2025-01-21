@@ -86,9 +86,43 @@ export const TextWhatIs = styled(Text)`
 
 export const ContainerWhatYouFound = styled.div`
   display: flex;
-  flex-direction: column;
-  margin: 20px auto;
-  width: 85%;
+  margin: 25px auto;
+
+  div{
+    width: 50%;
+    padding: 18px;
+  }
 `
 
-export const 
+export const TextWhatYouFound = styled(Text)`
+  margin: ${props => props.TextUp ? '10px 0 8px 0' : '0 0 10px 0'};
+  font-weight: ${props => props.TextUp ? 600 : 400};
+`
+
+export const ContainerWhyYouNeedof = styled.div`
+  display: flex;
+  margin: 50px auto;
+  align-items: center;
+
+  div{
+    width: 50%;
+    padding: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img {
+    width: 300px;
+    height: 480px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.4);
+  }
+
+  span{
+    border-bottom: 2px solid #fec64b;
+  }
+`
