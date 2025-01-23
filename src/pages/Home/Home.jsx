@@ -1,17 +1,18 @@
 import React from 'react'
-import { Container, ContainerTexts, ContainerWhatIs, ContainerWhatYouFound, ContainerWhatYouNeedof, ContainerWhyYouNeedof, MainSection, Text, TextWhatIs, TextWhatYouFound, Title } from './styles'
+import { Container, ContainerTexts, ContainerWhatIs, ContainerWhatYouFound, ContainerWhyYouNeedof, MainSection, Text, TextWhatIs, TextWhatYouFound, Title } from './styles'
 import psiAmanda from '../../assets/psi-amanda.jpg'
+import notebook from '../../assets/notebook.jpg'
 
 const Home = () => {
   return (
     <>
       <MainSection>
         <Container>
-          <Title size='36px'>Psi, você sente que a falta de organização está afetando sua clínica?</Title>
+          <Title size='36px' textOrientation='center'>Psi, você sente que a falta de organização está afetando sua clínica?</Title>
           <ContainerTexts>
             <div>
               <Text size='26px'>Se você:</Text>
-              <Text size='20px' widthText='80%' >✅ Não sabe exatamente quanto ganha e gasta com a clínica.</Text>
+              <Text size='20px' widthText='80%'>✅ Não sabe exatamente quanto ganha e gasta com a clínica.</Text>
               <Text size='20px' widthText='80%'>✅ Cobra valores baseados apenas no que outras pessoas fazem, sem considerar seus custos.</Text>
               <Text size='20px' widthText='80%'>✅ Não consegue se organizar para crescer, investir em formações ou até tirar férias sem medo.</Text>
               <Text size='20px' widthText='80%'>✅ Sente que sua falta de planejamento prejudica sua percepção de profissionalismo... </Text>
@@ -29,15 +30,20 @@ const Home = () => {
 
       <MainSection isZebraActive>
         <Container>
+          <Title size='34px' isZebraActive textOrientation='center'>O que é o ORGANIZA PSI?</Title>
           <ContainerWhatIs>
-            <Title size='34px' isZebraActive textOrientation='center'>O que é o ORGANIZA PSI?</Title>
+            <div>
+              <img src={notebook} alt='foto-notebook' />
+            </div>
 
-            <TextWhatIs size='26px' isZebraActive>Um combo completo de <span>materiais práticos e ensinamentos </span>
-              para ajudar psicólogas como você a colocar seu consultório em ordem, organizar finanças e processos,
-              e finalmente demonstrar profissionalismo para os pacientes.
-            </TextWhatIs>
-            <Text size='28px' isZebraActive textOrientation='center'>Psicólogos eficientes mantêm uma <span>clínica organizada!</span></Text>
+            <div>
+              <TextWhatIs size='26px' isZebraActive>Um combo completo de <span>materiais práticos e ensinamentos </span>
+                para ajudar psicólogas como você a colocar seu consultório em ordem, organizar finanças e processos,
+                e finalmente demonstrar profissionalismo para os pacientes.
+              </TextWhatIs>
+            </div>
           </ContainerWhatIs>
+          <Text size='28px' isZebraActive textOrientation='center'>Psicólogos eficientes mantêm uma <span>clínica organizada!</span></Text>
         </Container>
       </MainSection>
 
@@ -47,7 +53,10 @@ const Home = () => {
           <ContainerWhatYouFound>
             <div>
               <TextWhatYouFound size='22px' TextUp>✔️ Planilha de precificação de sessão:</TextWhatYouFound>
-              <TextWhatYouFound size='20px' textOrientation='justify'>Calcule o valor da sua sessão com base nas suas necessidades - Aprenda de uma vez quanto custa um paciente para a sua clínica e quanto precisa cobrar!</TextWhatYouFound>
+              <TextWhatYouFound size='20px' textOrientation='justify'>Calcule o valor da sua sessão com base nas suas necessidades. 
+                Aprenda de uma vez quanto custa um paciente para a sua clínica e quanto precisa cobrar! 
+                Essa planilha é fundamental para garantir que você esteja cobrando o que realmente vale, 
+                levando em conta todos os custos envolvidos no funcionamento da sua clínica.</TextWhatYouFound>
 
               <TextWhatYouFound size='22px' TextUp>✔️ Planilha de previsão de faturamento:</TextWhatYouFound>
               <TextWhatYouFound size='20px' textOrientation='justify'>Saiba exatamente quanto sua clínica vai faturar no mês,
@@ -87,7 +96,7 @@ const Home = () => {
 
           <ContainerWhyYouNeedof>
             <div>
-              <Text isZebraActive size='22px' textOrientation='justify'>💡 <span>Profissionalismo atrai mais pacientes:</span> Um consultório organizado transmite seriedade e aumenta a percepção de valor do seu trabalho.</Text>
+              <Text isZebraActive size='22px' textOrientation='justify'>💡 <span>Profissionalismo atrai mais pacientes:</span> Um consultório organizado e bem precificado transmite seriedade e aumenta a percepção de valor do seu trabalho.</Text>
               <Text isZebraActive size='22px' textOrientation='justify'>💡 <span>Organização reduz o estresse:</span> Saber exatamente quanto você ganha, gasta e planeja elimina a sensação de estar "perdida".</Text>
               <Text isZebraActive size='22px' textOrientation='justify'>💡 <span>Sustentabilidade a longo prazo:</span> Com suas finanças e processos em ordem, você pode crescer,
                 investir em você mesma e até tirar férias sem preocupações financeiras.</Text>
@@ -104,7 +113,9 @@ const Home = () => {
       <MainSection>
         <Container>
           <Title size='34px' textOrientation='center'>Para quem é o ORGANIZA PSI?</Title>
+          <div>
 
+          </div>
           <Text size='22px' textOrientation='justify'>🔸 Psicólogas recém-formadas que precisam dar os primeiros passos na gestão do consultório.</Text>
           <Text size='22px' textOrientation='justify'>🔸 Profissionais que já atuam, mas sentem que o amadorismo e a desorganização prejudicam o crescimento.</Text>
           <Text size='22px' textOrientation='justify'>🔸 Quem quer aumentar o valor das sessões, organizar a agenda e criar uma clínica sustentável e profissional.</Text>
@@ -113,16 +124,16 @@ const Home = () => {
 
       <MainSection isZebraActive>
         <Container>
-        <Title size='34px'  textOrientation='center'>Transforme sua clínica agora!</Title>
+          <Title size='34px' isZebraActive textOrientation='center'>Transforme sua clínica agora!</Title>
 
-        <Text size='22px'  textOrientation='center'>invista na sua carreira sem precisar gastar muito!** <br></br></Text>
-        <Text size='22px'  textOrientation='justify'>Por um preço especial, você terá acesso:</Text>
+          <Text size='22px' isZebraActive textOrientation='center'>invista na sua carreira sem precisar gastar muito!** <br></br></Text>
+          <Text size='22px' isZebraActive textOrientation='justify'>Por um preço especial, você terá acesso:</Text>
 
-        <Text size='22px'  textOrientation='justify'>✅ Todo o conteúdo prático do ORGANIZA PSI</Text>
-        <Text size='22px'  textOrientation='justify'>✅ Acesso imediato às planilhas, modelos e ensinamentos</Text>
-        <Text size='22px'  textOrientation='justify'>Suporte direto para tirar dúvidas no uso dos materiais</Text>
-        <Text size='22px'  textOrientation='justify'>Clique no botão abaixo e comece a organizar sua clínica hoje mesmo!<br></br>
-          [QUERO MINHA CLÍNICA EM ORDEM!]</Text>
+          <Text size='22px' isZebraActive textOrientation='justify'>✅ Todo o conteúdo prático do ORGANIZA PSI</Text>
+          <Text size='22px' isZebraActive textOrientation='justify'>✅ Acesso imediato às planilhas, modelos e ensinamentos</Text>
+          <Text size='22px' isZebraActive textOrientation='justify'>✅ Suporte direto para tirar dúvidas no uso dos materiais</Text>
+          <Text size='22px' isZebraActive textOrientation='justify'>Clique no botão abaixo e comece a organizar sua clínica hoje mesmo!<br></br>
+            [QUERO MINHA CLÍNICA EM ORDEM!]</Text>
         </Container>
       </MainSection>
 

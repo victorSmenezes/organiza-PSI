@@ -67,15 +67,31 @@ export const Text = styled.p`
 
 export const ContainerWhatIs = styled.div`
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  margin: 35px auto auto auto;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+  }
+
+  img {
+    width: 380px;
+    height: 500px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.4);
+  }
 `
 
 export const TextWhatIs = styled(Text)`
   border: 3px solid #fec64b;
-  padding: 25px;
+  padding: 20px;
   border-radius: 8px;
-  margin: 60px auto 35px auto;
+  width: 80%;
 
   span{
     color: #877d6c;
