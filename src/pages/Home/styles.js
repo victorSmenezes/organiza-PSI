@@ -142,3 +142,42 @@ export const ContainerWhyYouNeedof = styled.div`
     border-bottom: 2px solid #fec64b;
   }
 `
+
+export const ContainerForWhoIs = styled.div`
+  display: flex;
+  margin: 50px auto;
+  align-items: center;
+
+  div{
+    width: 50%;
+    padding: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img {
+    width: 300px;
+    height: 480px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.4);
+  }
+`
+
+export const ContainerContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: auto;
+  margin: 0 auto;
+`
+export const ContainerContentButton = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: 25px auto;
+  padding: 10px;
+  align-items: center;
+`
