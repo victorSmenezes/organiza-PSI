@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const MainSection = styled.section`
-  background-color: ${props => props.isZebraActive ? '#c8b99f' : '#FFFFFF'};
+  background-color: ${props => props.isZebraActive ? '#7298B0' : '#FAF9EC'};
   display: flex;
   align-items: center;
 `;
@@ -20,8 +20,8 @@ export const Container = styled.div`
   h2 {
     font-size: 34px;
     width: 100%;
-    color: #c8b99f;
-    border: 3px solid #fec64b;
+    color: #103751;
+    border: 3px solid #C9B9A0;
     padding: 25px;
     border-radius: 10px;
   }
@@ -29,13 +29,13 @@ export const Container = styled.div`
 
 export const Title = styled.h1`
   font-size: ${props => props.size};
-  color: ${props => props.isZebraActive ? '#FFFFFF' : '#c8b99f'};
+  color: ${props => props.isZebraActive ? '#FAF9EC' : '#103751'};
   margin: 65px 0 0 0;
   width: 100%;
   text-align: ${props => props.textOrientation};
 
   span{
-    color: #877d6c;
+    color: #7298B0;
   }
 `
 
@@ -55,13 +55,13 @@ export const ContainerTexts = styled.div`
 export const Text = styled.p`
   font-size: ${props => props.size};
   letter-spacing: 1.5px;
-  color: ${props => props.isZebraActive ? '#FFFFFF' : '#877d6c'};
+  color: ${props => props.isZebraActive ? '#FAF9EC' : '#000000  '};
   margin: 15px 0;
   width: ${props => props.widthText};
   text-align: ${props => props.textOrientation};
   
   span {
-    border-bottom: 2px solid #fec64b;
+    border-bottom: 2px solid #C9B9A0;
   }
 `
 
@@ -88,13 +88,13 @@ export const ContainerWhatIs = styled.div`
 `
 
 export const TextWhatIs = styled(Text)`
-  border: 3px solid #fec64b;
+  border: 3px solid #C9B9A0;
   padding: 20px;
   border-radius: 8px;
   width: 80%;
 
   span{
-    color: #877d6c;
+    color: #103751;
     font-weight: 600;
     border: none;
   }
@@ -112,6 +112,7 @@ export const ContainerWhatYouFound = styled.div`
 
 export const TextWhatYouFound = styled(Text)`
   margin: ${props => props.TextUp ? '10px 0 8px 0' : '0 0 10px 0'};
+  color: ${props => props.TextUp ? '#103751' : '#C9B9A0'};
   font-weight: ${props => props.TextUp ? 600 : 400};
 `
 
@@ -139,7 +140,7 @@ export const ContainerWhyYouNeedof = styled.div`
   }
 
   span{
-    border-bottom: 2px solid #fec64b;
+    border-bottom: 2px solid #C9B9A0;
   }
 `
 

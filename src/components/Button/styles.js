@@ -4,10 +4,9 @@ export const ButtonStyle = styled.button`
   width: 65%;
   height: 65px;
   padding: 15px;
-  border-radius: 20px;
-  background-color: #ff9b00;
+  border-radius: 45px;
+  background-color: #C9B9A0;
   border: none;
-  color: #FFFFFF;
   cursor: pointer;
   font-size: 22px;
 
@@ -16,7 +15,7 @@ export const ButtonStyle = styled.button`
   }
 
   a {
-    color: #FFFFFF;
+    color: #FAF9EC;
     text-overflow: none;
     text-decoration: none;
   }
