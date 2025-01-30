@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const MainSection = styled.section`
-  background-color: ${props => props.isZebraActive ? '#7298B0' : '#FAF9EC'};
+  background-color: ${props => props.$isZebraActive ? '#7298B0' : '#FAF9EC'};
   display: flex;
   align-items: center;
 `;
@@ -23,19 +23,31 @@ export const Container = styled.div`
     color: #103751;
     border: 3px solid #C9B9A0;
     padding: 25px;
-    border-radius: 10px;
+    border-radius: 45px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 24px;
+      width: 90%;
+      padding: 20px;
+      margin: auto;
+  }
+    
   }
 `;
 
 export const Title = styled.h1`
   font-size: ${props => props.size};
-  color: ${props => props.isZebraActive ? '#FAF9EC' : '#103751'};
+  color: ${props => props.$isZebraActive ? '#FAF9EC' : '#103751'};
   margin: 65px 0 0 0;
   width: 100%;
-  text-align: ${props => props.textOrientation};
+  text-align: ${props => props.$textOrientation};
 
   span{
     color: #7298B0;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: ${props => props.$sizeMobile || '26px'};
   }
 `
 
@@ -49,19 +61,33 @@ export const ContainerTexts = styled.div`
 
   div {
     width: 650px;
+
+    @media screen and (max-width: 768px) {
+    width: auto;
+  }
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
   }
 `
 
 export const Text = styled.p`
   font-size: ${props => props.size};
   letter-spacing: 1.5px;
-  color: ${props => props.isZebraActive ? '#FAF9EC' : '#000000  '};
+  color: ${props => props.$isZebraActive ? '#FAF9EC' : '#000000  '};
   margin: 15px 0;
-  width: ${props => props.widthText};
-  text-align: ${props => props.textOrientation};
+  width: ${props => props.$widthText};
+  text-align: ${props => props.$textOrientation};
   
   span {
     border-bottom: 2px solid #C9B9A0;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: ${props => props.$sizeMobile};
+    width: 90%;
+    margin:  15px auto;
   }
 `
 
@@ -75,6 +101,10 @@ export const ContainerWhatIs = styled.div`
     align-items: center;
     justify-content: center;
     width: 50%;
+
+    @media screen and (max-width: 768px) {
+      width: auto;
+    }
   }
 
   img {
@@ -84,13 +114,24 @@ export const ContainerWhatIs = styled.div`
     -webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.4);
     -moz-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.4);
     box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.4);
+
+    @media screen and (max-width: 768px) {
+      width: 290px;
+      height: 410px;;
+    }   
   }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
+  
 `
 
 export const TextWhatIs = styled(Text)`
   border: 3px solid #C9B9A0;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 45px;
   width: 80%;
 
   span{
@@ -98,22 +139,45 @@ export const TextWhatIs = styled(Text)`
     font-weight: 600;
     border: none;
   }
+
+  @media screen and (max-width: 768px) {
+    margin-top: 40px;
+  }
 `
 
 export const ContainerWhatYouFound = styled.div`
   display: flex;
   margin: 25px auto;
 
-  div{
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      width: auto;
+    }
+  }
+
+  div {
     width: 50%;
     padding: 18px;
+    
+    @media screen and (max-width: 768px) {
+      width: auto;
+      padding-top: 0;
+  }
   }
 `
 
 export const TextWhatYouFound = styled(Text)`
-  margin: ${props => props.TextUp ? '10px 0 8px 0' : '0 0 10px 0'};
-  color: ${props => props.TextUp ? '#103751' : '#C9B9A0'};
-  font-weight: ${props => props.TextUp ? 600 : 400};
+  margin: ${props => props.$TextUp ? '10px 0 8px 0' : '0 0 10px 0'};
+  color: ${props => props.$TextUp ? '#103751' : '#C9B9A0'};
+  font-weight: ${props => props.$TextUp ? 600 : 400};
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 10px;
+  }
 `
 
 export const ContainerWhyYouNeedof = styled.div`
@@ -128,6 +192,10 @@ export const ContainerWhyYouNeedof = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media screen and (max-width: 768px) {
+     width: auto;
+  }
   }
 
   img {
@@ -137,10 +205,19 @@ export const ContainerWhyYouNeedof = styled.div`
     -webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.4);
     -moz-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.4);
     box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.4);
+
+    @media screen and (max-width: 768px) {
+      width: 280px;
+      height: 440px;
+    }
   }
 
   span{
     border-bottom: 2px solid #C9B9A0;
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
   }
 `
 
@@ -156,6 +233,10 @@ export const ContainerForWhoIs = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media screen and (max-width: 768px) {
+      width: auto;
+  }
   }
 
   img {
@@ -165,6 +246,15 @@ export const ContainerForWhoIs = styled.div`
     -webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.4);
     -moz-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.4);
     box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.4);
+
+    @media screen and (max-width: 768px) {
+      width: 280px;
+      height: 420px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
   }
 `
 
@@ -174,6 +264,13 @@ export const ContainerContent = styled.div`
   align-items: start;
   width: auto;
   margin: 0 auto;
+
+  @media screen and (max-width: 768px) {
+    p {
+      text-align: start;
+      width: 95%;
+    }
+  }
 `
 export const ContainerContentButton = styled.div`
   display: flex;

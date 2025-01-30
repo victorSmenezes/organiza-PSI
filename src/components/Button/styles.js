@@ -19,4 +19,9 @@ export const ButtonStyle = styled.button`
     text-overflow: none;
     text-decoration: none;
   }
+
+  @media screen and (max-width: 768px) {
+    width: 85%;
+    font-size: 18px;
+  }
 `
