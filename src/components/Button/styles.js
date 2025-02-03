@@ -23,5 +23,6 @@ export const ButtonStyle = styled.button`
   @media screen and (max-width: 768px) {
     width: 85%;
     font-size: 18px;
+    padding: 10px;
   }
 `

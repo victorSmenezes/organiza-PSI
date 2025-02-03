@@ -24,7 +24,6 @@ export const Container = styled.div`
     border: 3px solid #C9B9A0;
     padding: 25px;
     border-radius: 45px;
-
     @media screen and (max-width: 768px) {
       font-size: 24px;
       width: 90%;
@@ -41,13 +40,21 @@ export const Title = styled.h1`
   margin: 65px 0 0 0;
   width: 100%;
   text-align: ${props => props.$textOrientation};
+    
+    a {
+      color: #7298B0;
+      text-overflow: none;
+      text-decoration: none;
 
-  span{
-    color: #7298B0;
+    &:hover {
+     opacity: .8;
+    }
   }
 
   @media screen and (max-width: 768px) {
-    font-size: ${props => props.$sizeMobile || '26px'};
+    font-size: ${props => props.$sizeMobile || '24px'};
+    margin: 65px auto 0 auto;
+    width: 90%;
   }
 `
 
@@ -172,7 +179,7 @@ export const ContainerWhatYouFound = styled.div`
 
 export const TextWhatYouFound = styled(Text)`
   margin: ${props => props.$TextUp ? '10px 0 8px 0' : '0 0 10px 0'};
-  color: ${props => props.$TextUp ? '#103751' : '#C9B9A0'};
+  color: ${props => props.$TextUp ? '#103751' : '#7298B0'};
   font-weight: ${props => props.$TextUp ? 600 : 400};
 
   @media screen and (max-width: 768px) {

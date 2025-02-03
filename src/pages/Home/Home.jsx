@@ -24,7 +24,7 @@ const Home = () => {
             </div>
           </ContainerTexts>
 
-          <Title size='34px' $textOrientation='center' $sizeMobile='18px'>Então o <span>ORGANIZA PSI - Sua Clínica em Ordem</span> é exatamente o que você precisa para transformar sua clínica!</Title>
+          <Title size='34px' $textOrientation='center' $sizeMobile='18px'>Então o <a href="https://pay.kiwify.com.br/D1xaqlA" target="_blank" rel="noopener noreferrer">ORGANIZA PSI</a> - Sua Clínica em Ordem é exatamente o que você precisa para transformar sua clínica!</Title>
           <Text size='22px' $textOrientation='center' $sizeMobile='16px'>O Combo de Materiais que será uma verdadeira mão na roda na sua prática clínica!</Text>
         </Container>
       </MainSection>
@@ -143,7 +143,7 @@ const Home = () => {
 
           <ContainerContentButton>
             <Text size='22px' $isZebraActive $textOrientation='center' $sizeMobile='20px'>Clique no botão abaixo e comece a organizar sua clínica hoje mesmo!</Text>
-            <Button text={"QUERO MINHA CLÍNICA EM ORDEM!"} link="" />
+            <Button text={"QUERO MINHA CLÍNICA EM ORDEM!"} link="https://pay.kiwify.com.br/D1xaqlA" />
           </ContainerContentButton>
         </Container>
       </MainSection>
