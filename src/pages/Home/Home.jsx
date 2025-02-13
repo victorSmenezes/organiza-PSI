@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, ContainerContent, ContainerContentButton, ContainerForWhoIs, ContainerTexts, ContainerWhatIs, ContainerWhatYouFound, ContainerWhyYouNeedof, MainSection, Text, TextWhatIs, TextWhatYouFound, Title } from './styles'
+import { Container, ContainerContent, ContainerContentButton, ContainerForWhoIs, ContainerTexts, ContainerWhatIs, ContainerWhatYouFound, ContainerWhyYouNeedof, MainSection, Text, TextContainerContent, TextWhatIs, TextWhatYouFound, Title } from './styles'
 import psiAmanda from '../../assets/psi-amanda.jpg'
 import notebook from '../../assets/notebook.jpg'
 import amandaWbooks from '../../assets/amanda-w-books.jpg'
@@ -24,8 +24,10 @@ const Home = () => {
             </div>
           </ContainerTexts>
 
-          <Title size='34px' $textOrientation='center' $sizeMobile='18px'>Então o <a href="https://pay.kiwify.com.br/D1xaqlA" target="_blank" rel="noopener noreferrer">ORGANIZA PSI</a> - Sua Clínica em Ordem é exatamente o que você precisa para transformar sua clínica!</Title>
+          <Title size='34px' $textOrientation='center' $sizeMobile='18px'>Então o <span>ORGANIZA PSI</span> - Sua Clínica em Ordem é exatamente o que você precisa para transformar sua clínica!</Title>
           <Text size='22px' $textOrientation='center' $sizeMobile='16px'>O Combo de Materiais que será uma verdadeira mão na roda na sua prática clínica!</Text>
+          
+          <Button text={"QUERO MINHA CLÍNICA EM ORDEM!"} link="https://pay.kiwify.com.br/D1xaqlA" />
         </Container>
       </MainSection>
 
@@ -38,7 +40,7 @@ const Home = () => {
             </div>
 
             <div>
-              <TextWhatIs size='26px' $isZebraActive $sizeMobile='20px'>Um combo completo de <span>materiais práticos e ensinamentos </span>
+              <TextWhatIs size='26px' $sizeMobile='20px'>Um combo completo de <span>materiais práticos e ensinamentos </span>
                 para ajudar psicólogas como você a colocar seu consultório em ordem, organizar finanças e processos,
                 e finalmente demonstrar profissionalismo para os pacientes.
               </TextWhatIs>
@@ -108,6 +110,8 @@ const Home = () => {
               <img src={psiAmanda} alt='psi-amanda' />
             </div>
           </ContainerWhyYouNeedof>
+          <Button text={"EU PRECISO DISSO!"} link="https://pay.kiwify.com.br/D1xaqlA" />
+
         </Container>
       </MainSection>
 
@@ -134,7 +138,7 @@ const Home = () => {
           <Title size='34px' $isZebraActive $textOrientation='center'>Transforme sua clínica agora!</Title>
 
           <Text size='22px' $isZebraActive $textOrientation='center'><span>Invista na sua carreira sem precisar gastar muito!</span></Text>
-          <Text size='22px' $textOrientation='center'>Por um preço especial, você terá acesso:</Text>
+          <TextContainerContent size='22px' $textOrientation='center'>Por um preço especial, você terá acesso:</TextContainerContent>
           <ContainerContent>
             <Text size='22px' $isZebraActive $textOrientation='center'>✅ Todo o conteúdo prático do ORGANIZA PSI</Text>
             <Text size='22px' $isZebraActive $textOrientation='center'>✅ Acesso imediato às planilhas, modelos e ensinamentos</Text>
@@ -142,7 +146,7 @@ const Home = () => {
           </ContainerContent>
 
           <ContainerContentButton>
-            <Text size='22px' $isZebraActive $textOrientation='center' $sizeMobile='20px'>Clique no botão abaixo e comece a organizar sua clínica hoje mesmo!</Text>
+            <TextContainerContent size='22px' $textOrientation='center' $sizeMobile='20px'>Clique no botão abaixo e comece a organizar sua clínica hoje mesmo!</TextContainerContent>
             <Button text={"QUERO MINHA CLÍNICA EM ORDEM!"} link="https://pay.kiwify.com.br/D1xaqlA" />
           </ContainerContentButton>
         </Container>
