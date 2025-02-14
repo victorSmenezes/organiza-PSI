@@ -5,19 +5,24 @@ export const ButtonStyle = styled.button`
   height: 65px;
   padding: 15px;
   border-radius: 45px;
-  background-color: #C9B9A0;
+  background-color: #ffc365;
   border: none;
   cursor: pointer;
   font-size: 22px;
+  font-weight: 500;
+  margin: 25px auto;
 
   &:hover {
-    opacity: .8;
+    opacity: .9;
   }
 
   a {
     color: #FAF9EC;
-    text-overflow: none;
     text-decoration: none;
+
+    &:hover {
+    color: #103751;
+  }
   }
 
   @media screen and (max-width: 768px) {

@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 export const MainSection = styled.section`
-  background-color: ${props => props.$isZebraActive ? '#7298B0' : '#FAF9EC'};
+  background-color: ${props => props.$isZebraActive ? '#103751' : '#ffffff'};
   display: flex;
   align-items: center;
+  border-radius: ${props => props.$isZebraActive ? '50px' : ''};
 `;
 
 export const Container = styled.div`
@@ -16,14 +17,16 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   padding: 5px;
+  align-items: center;
 
   h2 {
     font-size: 34px;
     width: 100%;
     color: #103751;
-    border: 3px solid #C9B9A0;
+    border: 3px solid #ffc365;
     padding: 25px;
     border-radius: 45px;
+
     @media screen and (max-width: 768px) {
       font-size: 24px;
       width: 90%;
@@ -36,20 +39,15 @@ export const Container = styled.div`
 
 export const Title = styled.h1`
   font-size: ${props => props.size};
-  color: ${props => props.$isZebraActive ? '#FAF9EC' : '#103751'};
+  color: ${props => props.$isZebraActive ? '#ffc365' : '#103751'};
   margin: 65px 0 0 0;
   width: 100%;
   text-align: ${props => props.$textOrientation};
+  font-weight: 800;
     
-    a {
+    span {
       color: #7298B0;
-      text-overflow: none;
-      text-decoration: none;
-
-    &:hover {
-     opacity: .8;
     }
-  }
 
   @media screen and (max-width: 768px) {
     font-size: ${props => props.$sizeMobile || '24px'};
@@ -82,13 +80,14 @@ export const ContainerTexts = styled.div`
 export const Text = styled.p`
   font-size: ${props => props.size};
   letter-spacing: 1.5px;
-  color: ${props => props.$isZebraActive ? '#FAF9EC' : '#000000  '};
+  color: ${props => props.$isZebraActive ? '#ffc365' : '#000000  '};
   margin: 15px 0;
   width: ${props => props.$widthText};
   text-align: ${props => props.$textOrientation};
+  font-weight: 600;
   
   span {
-    border-bottom: 2px solid #C9B9A0;
+    border-bottom: 2px solid #FAF9EC;
   }
 
   @media screen and (max-width: 768px) {
@@ -136,14 +135,15 @@ export const ContainerWhatIs = styled.div`
 `
 
 export const TextWhatIs = styled(Text)`
-  border: 3px solid #C9B9A0;
+  border: 3px solid #ffc365;
   padding: 20px;
   border-radius: 45px;
   width: 80%;
+  color: #FAF9EC;
 
   span{
-    color: #103751;
-    font-weight: 600;
+    color: #ffc365;
+    font-weight: 700;
     border: none;
   }
 
@@ -179,8 +179,8 @@ export const ContainerWhatYouFound = styled.div`
 
 export const TextWhatYouFound = styled(Text)`
   margin: ${props => props.$TextUp ? '10px 0 8px 0' : '0 0 10px 0'};
-  color: ${props => props.$TextUp ? '#103751' : '#7298B0'};
-  font-weight: ${props => props.$TextUp ? 600 : 400};
+  color: ${props => props.$TextUp ? '#000000' : '#7298B0'};
+  font-weight: ${props => props.$TextUp ? 700 : 600};
 
   @media screen and (max-width: 768px) {
     margin-bottom: 10px;
@@ -220,7 +220,8 @@ export const ContainerWhyYouNeedof = styled.div`
   }
 
   span{
-    border-bottom: 2px solid #C9B9A0;
+    color: #FAF9EC;
+    border-bottom:2px solid  #ffc365;
   }
 
   @media screen and (max-width: 768px) {
@@ -285,4 +286,18 @@ export const ContainerContentButton = styled.div`
   margin: 25px auto;
   padding: 10px;
   align-items: center;
+`
+
+export const TextContainerContent = styled(Text)`
+  color: #FAF9EC;
+
+  span{
+    color: #ffc365;
+    font-weight: 600;
+    border: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-top: 40px;
+  }
 `
