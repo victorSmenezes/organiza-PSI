@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, ContainerContent, ContainerContentButton, ContainerForWhoIs, ContainerTexts, ContainerWhatIs, ContainerWhatYouFound, ContainerWhyYouNeedof, MainSection, Text, TextContainerContent, TextWhatIs, TextWhatYouFound, Title } from './styles'
+import { Container, ContainerContent, ContainerContentButton, ContainerForWhoIs, ContainerTexts, ContainerWhatIs, ContainerWhatYouFound, ContainerWhyYouNeedof, MainSection, Text, TextContainerContent, TextofCombo, TextWhatIs, TextWhatYouFound, Title } from './styles'
 import psiAmanda from '../../assets/psi-amanda.jpg'
 import notebook from '../../assets/notebook.jpg'
 import amandaWbooks from '../../assets/amanda-w-books.jpg'
@@ -25,7 +25,7 @@ const Home = () => {
           </ContainerTexts>
 
           <Title size='34px' $textOrientation='center' $sizeMobile='18px'>Então o <span>ORGANIZA PSI</span> - Sua Clínica em Ordem é exatamente o que você precisa para transformar sua clínica!</Title>
-          <Text size='22px' $textOrientation='center' $sizeMobile='16px'>O Combo de Materiais que será uma verdadeira mão na roda na sua prática clínica!</Text>
+          <TextofCombo size='22px' $textOrientation='center' $sizeMobile='16px'>O Combo de Materiais que será uma verdadeira mão na roda na sua prática clínica!</TextofCombo>
           
           <Button text={"QUERO MINHA CLÍNICA EM ORDEM!"} link="https://pay.kiwify.com.br/D1xaqlA" />
         </Container>

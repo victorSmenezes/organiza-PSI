@@ -97,6 +97,13 @@ export const Text = styled.p`
   }
 `
 
+export const TextofCombo = styled(Text)`
+  background: #103751;
+  border-radius: 10px;
+  color: rgb(255, 195, 101);
+  padding: 10px;
+`
+
 export const ContainerWhatIs = styled.div`
   display: flex;
   margin: 35px auto auto auto;
