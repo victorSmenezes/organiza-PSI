@@ -121,12 +121,8 @@ export const ContainerWhatIs = styled.div`
   }
 
   img {
-    width: 380px;
+    width: auto;
     height: 500px;
-    border-radius: 10px;
-    -webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.4);
-    -moz-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.4);
-    box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.4);
 
     @media screen and (max-width: 768px) {
       width: 290px;
@@ -213,8 +209,8 @@ export const ContainerWhyYouNeedof = styled.div`
   }
 
   img {
-    width: 300px;
-    height: 480px;
+    width: 320px;
+    height: 500px;
     border-radius: 10px;
     -webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.4);
     -moz-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.4);
@@ -255,8 +251,8 @@ export const ContainerForWhoIs = styled.div`
   }
 
   img {
-    width: 300px;
-    height: 480px;
+    width: 320px;
+    height: 500px;
     border-radius: 10px;
     -webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.4);
     -moz-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.4);

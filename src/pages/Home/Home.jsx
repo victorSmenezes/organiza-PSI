@@ -1,7 +1,23 @@
 import React from 'react'
-import { Container, ContainerContent, ContainerContentButton, ContainerForWhoIs, ContainerTexts, ContainerWhatIs, ContainerWhatYouFound, ContainerWhyYouNeedof, MainSection, Text, TextContainerContent, TextofCombo, TextWhatIs, TextWhatYouFound, Title } from './styles'
+import { 
+  Container, 
+  ContainerContent, 
+  ContainerContentButton, 
+  ContainerForWhoIs, 
+  ContainerTexts, 
+  ContainerWhatIs, 
+  ContainerWhatYouFound, 
+  ContainerWhyYouNeedof, 
+  MainSection, 
+  Text, 
+  TextContainerContent, 
+  TextofCombo, 
+  TextWhatIs, 
+  TextWhatYouFound, 
+  Title
+ } from './styles'
 import psiAmanda from '../../assets/psi-amanda.jpg'
-import notebook from '../../assets/notebook.jpg'
+import mockup from '../../assets/MOCKUPS AMANDA.png'
 import amandaWbooks from '../../assets/amanda-w-books.jpg'
 import { Button } from '../../components/Button'
 
@@ -36,7 +52,7 @@ const Home = () => {
           <Title size='34px' $isZebraActive $textOrientation='center'>O que é o ORGANIZA PSI?</Title>
           <ContainerWhatIs>
             <div>
-              <img src={notebook} alt='foto-notebook' />
+              <img src={mockup} alt='foto-notebook' />
             </div>
 
             <div>
@@ -151,7 +167,6 @@ const Home = () => {
           </ContainerContentButton>
         </Container>
       </MainSection>
-
     </>
   )
 }
