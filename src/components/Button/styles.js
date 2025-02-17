@@ -17,6 +17,10 @@ export const ButtonStyle = styled.button`
   }
 
   a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     color: #FAF9EC;
     text-decoration: none;
 
