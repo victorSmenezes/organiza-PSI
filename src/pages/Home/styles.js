@@ -28,7 +28,7 @@ export const Container = styled.div`
     border-radius: 45px;
 
     @media screen and (max-width: 768px) {
-      font-size: 24px;
+      font-size: 22px;
       width: 90%;
       padding: 20px;
       margin: auto;
@@ -46,7 +46,7 @@ export const Title = styled.h1`
   font-weight: 800;
     
     span {
-      color: #7298B0;
+      color: #ffc365;
     }
 
   @media screen and (max-width: 768px) {
@@ -61,15 +61,20 @@ export const ContainerTexts = styled.div`
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  gap: 20px;
   margin-top: 50px;
 
   div {
     width: 650px;
 
-    @media screen and (max-width: 768px) {
-    width: auto;
+    @media screen and (max-width: 1024px) {
+     width: 100%;
+     padding: 10px;
   }
+    @media screen and (min-width: 1024px) {
+    width: 500px;
+  }
+
+
   }
 
   @media screen and (max-width: 768px) {
@@ -115,7 +120,7 @@ export const ContainerWhatIs = styled.div`
     justify-content: center;
     width: 50%;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
       width: auto;
     }
   }
@@ -125,12 +130,12 @@ export const ContainerWhatIs = styled.div`
     height: 500px;
 
     @media screen and (max-width: 768px) {
-      width: 290px;
-      height: 410px;;
+      width: 100%;
+      height: 320px;
     }   
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     flex-direction: column;
     align-items: center;
   }

@@ -21,7 +21,7 @@ export const Container = styled.footer`
     color: #103751;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 
     &:hover {
       color: #ffc365; 
@@ -38,5 +38,15 @@ export const Container = styled.footer`
 
   a:nth-last-child(1) {
     font-size: 11px;
+  }
+
+  @media screen and (max-width: 400px) {
+    nav:nth-last-child(2) {
+    flex-direction: column;
+
+    p {
+      justify-content: center;
+    }
+  }
   }
 `
