@@ -123,7 +123,7 @@ const Home = () => {
             </div>
 
             <div>
-              <img src={psiAmanda} alt='psi-amanda' />
+              <img src={psiAmanda} alt='psi-amanda' loading='lazy' />
             </div>
           </ContainerWhyYouNeedof>
           <Button text={"EU PRECISO DISSO!"} link="https://pay.kiwify.com.br/D1xaqlA" />
@@ -136,7 +136,7 @@ const Home = () => {
           <Title size='34px' $textOrientation='center'>Para quem é o ORGANIZA PSI?</Title>
           <ContainerForWhoIs>
             <div>
-              <img src={amandaWbooks} alt='psi-amanda' />
+              <img src={amandaWbooks} alt='amanda com livros' loading='lazy' />
             </div>
 
             <div>
