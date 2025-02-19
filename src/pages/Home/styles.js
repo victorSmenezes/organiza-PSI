@@ -20,7 +20,7 @@ export const Container = styled.div`
   align-items: center;
 
   h2 {
-    font-size: 34px;
+    font-size: 30px;
     width: 100%;
     color: #103751;
     border: 3px solid #ffc365;
