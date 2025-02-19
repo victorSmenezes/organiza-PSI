@@ -100,7 +100,7 @@ export const Text = styled.p`
 export const TextofCombo = styled(Text)`
   background: #103751;
   border-radius: 10px;
-  color: rgb(255, 195, 101);
+  color: #ffc365;
   padding: 10px;
 `
 

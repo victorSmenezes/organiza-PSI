@@ -36,7 +36,7 @@ const Home = () => {
               <Text size='20px' $widthText='80%'>✅ Sente que sua falta de planejamento prejudica sua percepção de profissionalismo... </Text>
             </div>
             <div>
-              <h2>A boa notícia é que você não precisa investir rios de dinheiro em sistemas complexos de gestão. O básico funciona e é mais do que suficiente para transformar sua prática</h2>
+              <h2>A boa notícia é que você não precisa investir rios de dinheiro em sistemas complexos de gestão. O básico funciona e é mais do que suficiente para transformar sua prática.</h2>
             </div>
           </ContainerTexts>
 
