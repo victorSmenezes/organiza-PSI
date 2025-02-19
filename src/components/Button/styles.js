@@ -21,7 +21,7 @@ export const ButtonStyle = styled.button`
     align-items: center;
     justify-content: center;
     width: 100%;
-    color: #FAF9EC;
+    color: #000000;
     text-decoration: none;
 
     &:hover {

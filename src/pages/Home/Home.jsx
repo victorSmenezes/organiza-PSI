@@ -115,11 +115,11 @@ const Home = () => {
 
           <ContainerWhyYouNeedof>
             <div>
-              <Text $isZebraActive size='22px' $textOrientation='justify'>💡 <span>Profissionalismo atrai mais pacientes:</span> Um consultório organizado e bem precificado transmite seriedade e aumenta a percepção de valor do seu trabalho.</Text>
-              <Text $isZebraActive size='22px' $textOrientation='justify'>💡 <span>Organização reduz o estresse:</span> Saber exatamente quanto você ganha, gasta e planeja elimina a sensação de estar "perdida".</Text>
-              <Text $isZebraActive size='22px' $textOrientation='justify'>💡 <span>Sustentabilidade a longo prazo:</span> Com suas finanças e processos em ordem, você pode crescer,
+              <Text $isZebraActive size='22px' $textOrientation='justify'>💡<span>Profissionalismo atrai mais pacientes:</span> Um consultório organizado e bem precificado transmite seriedade e aumenta a percepção de valor do seu trabalho.</Text>
+              <Text $isZebraActive size='22px' $textOrientation='justify'>💡<span>Organização reduz o estresse:</span> Saber exatamente quanto você ganha, gasta e planeja elimina a sensação de estar "perdida".</Text>
+              <Text $isZebraActive size='22px' $textOrientation='justify'>💡<span>Sustentabilidade a longo prazo:</span> Com suas finanças e processos em ordem, você pode crescer,
                 investir em você mesma e até tirar férias sem preocupações financeiras.</Text>
-              <Text $isZebraActive size='22px' $textOrientation='justify'>💡 <span>Segurança e autonomia:</span> Estabeleça regras e controle sobre sua clínica, definindo os limites que você e seus pacientes merecem.</Text>
+              <Text $isZebraActive size='22px' $textOrientation='justify'>💡<span>Segurança e autonomia:</span> Estabeleça regras e controle sobre sua clínica, definindo os limites que você e seus pacientes merecem.</Text>
             </div>
 
             <div>

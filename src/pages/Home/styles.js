@@ -70,11 +70,6 @@ export const ContainerTexts = styled.div`
      width: 100%;
      padding: 10px;
   }
-    @media screen and (min-width: 1024px) {
-    width: 500px;
-  }
-
-
   }
 
   @media screen and (max-width: 768px) {
